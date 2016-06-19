@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery增删改查</title>
+	<link rel="stylesheet" href="todo.css">
+</head>
+<body>
+	<div id="container">
+		<h2>人员信息登录表</h2>
+		<div id="mybody">
+			<div id="table"></div>
+			<div id="board"></div>
+		</div>
+
+		<div id="div1">
+			<p class="p1">
+				姓名：e 年龄：18 性别：男 籍贯：上海
+				学校：鲁东大学 专业：信息管理与信息系统
+			</p>
+			<p class="p2">
+				姓名：a 年龄：18 性别：男 籍贯：山东
+				学校：鲁东大学 专业：信息管理与信息系统
+			</p>
+			<p class="p3">
+				姓名：b 年龄：18 性别：女 籍贯：北京
+				学校：鲁东大学 专业： 软件工程
+			</p>
+			<p class="p4">
+				姓名：c 年龄：19 性别：女 籍贯：河南
+				学校：鲁东大学 专业： 软件工程
+			</p>
+			<p class="p5">
+				姓名：d 年龄：20 性别：女 籍贯：四川
+				学校：鲁东大学 专业： 计算机
+			</p>
+		</div>
+		<div id="div2">
+			
+		</div>
+	</div>
+		<script type="text/html" id="tpl-input">
+			<input type="text" name="name" placeholder="请输入姓名">
+			<br/>
+			<textarea name="age" placeholder="填写年龄"></textarea>
+			<br/>
+			<textarea name="sex" placeholder="填写性别"></textarea>
+			
+			<button id="BtnAdd">提交</button>
+			<br/>
+			<input type="text" name="keyword" placeholder="请输入关键字" runat="server" />
+
+			<button id="BtnSearch">查询</button>
+		</script>
+		<script src="jquery.min.js"></script>
+		<script src="mustache.js"></script>
+		<script src="todo.js"></script>
+</body>
+</html>
